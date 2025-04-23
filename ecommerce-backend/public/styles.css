@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  display: block; /* Prevents flexbox from causing the navbar and form to be side by side */
+}
+
+/* Navbar Styling */
+.navbar {
+background-color: #242323; /* Dark background color */
+color: white;
+padding: 20px 0;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+text-align: center; /* Centers the message */
+}
+
+.navbar-message {
+font-size: 20px;
+font-weight: bold;
+letter-spacing: 1px;
+text-transform: uppercase;
+}
+
+/* Form Container Styling */
+.container {
+max-width: 500px;
+margin: 40px auto; /* Centers the form vertically and horizontally */
+padding: 20px;
+border: 1px solid #ccc;
+border-radius: 8px;
+background-color: rgb(167, 161, 161);
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Field Styling */
+.input-group {
+margin-bottom: 20px;
+}
+
+.input-group label {
+display: block;
+margin-bottom: 5px;
+font-size: 14px;
+}
+
+.input-group input {
+width: 100%;
+padding: 10px;
+border: 1px solid #4f4848;
+border-radius: 5px;
+font-size: 16px;
+}
+
+.input-group input:focus {
+background-color: #f1f1f1bd;
+}
+
+/* Button Styling */
+.btn {
+width: 100%;
+padding: 10px;
+background-color: #b7095d;
+color: white;
+border: none;
+border-radius: 5px;
+font-size: 16px;
+cursor: pointer;
+transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+background-color: #b7095d;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+.container {
+  padding: 20px;
+}
+.input-group input, .btn {
+  font-size: 14px;
+  padding: 8px;
+}
+}
+
+@media (max-width: 480px) {
+.container {
+  padding: 15px;
+}
+h2 {
+  font-size: 18px;
+}
+.input-group input, .btn {
+  font-size: 12px;
+  padding: 6px;
+}
+}
